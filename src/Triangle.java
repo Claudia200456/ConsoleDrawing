@@ -30,11 +30,11 @@ public class Triangle extends Shape {
         int xPixel;
         int yPixel;
 
-        for (yPixel = 0; yPixel < 7 ; yPixel++) {
+        for (yPixel = 1; yPixel < 7 ; yPixel++) {
 
-            for (xPixel = 0 ; xPixel < 2 * 7  -1; xPixel++) {
+            for (xPixel = 1 ; xPixel < 2 * 7  -1; xPixel++) {
 
-                if (xPixel > 7 - (yPixel - 1) && xPixel <7 + (yPixel - 1)) {
+                if (xPixel > 7 - (yPixel - 1) && xPixel < 7 + (yPixel - 1)) {
 
                     fillPixel(xPixel, yPixel);
 
